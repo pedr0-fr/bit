@@ -973,11 +973,11 @@ class NetworkAPI:
         BlockchainAPI.get_transaction_by_id,
     ]
     GET_UNSPENT_MAIN = [
-        BlockchairAPI.get_unspent,
-        BitcoreAPI.get_unspent,  # No limit
-        SmartbitAPI.get_unspent,  # Limit 1000
         BlockstreamAPI.get_unspent,
+        BlockchairAPI.get_unspent,
+        SmartbitAPI.get_unspent,  # Limit 1000
         BlockchainAPI.get_unspent,
+        BitcoreAPI.get_unspent  # No limit
     ]
     BROADCAST_TX_MAIN = [
         BlockchairAPI.broadcast_tx,
